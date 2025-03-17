@@ -5,12 +5,12 @@ import racingcar.Car;
 import java.util.List;
 
 public class ResultView {
-    public static void showResultMessage(){
+    public static void showResultMessage() {
         System.out.println("실행 결과");
     }
 
-    private static void showCarResult(List<Car> cars){
-        for(Car car: cars) {
+    private static void showCarResult(List<Car> cars) {
+        for (Car car : cars) {
             System.out.println("-".repeat(car.getDistance()));
         }
     }
@@ -19,7 +19,7 @@ public class ResultView {
         System.out.println();
     }
 
-    public static void showCarGameResult(List<Car> cars){
+    public static void showCarGameResult(List<Car> cars) {
         showCarResult(cars);
         showEndOfTry();
     }
